@@ -2,7 +2,7 @@
 ## 1. 当前项目结构
 
 ```text
-复现知识图谱/
+知识图谱/
 ├── data/                  # 知识图谱构造、数据补全、向量写入
 ├── core/                  # 核心问答层：Neo4j、Embedding、RAG、Text2Cypher、前端
 ├── 测试/                  # 零散测试脚本
@@ -126,7 +126,7 @@
 
 ```bash
 cd core
-streamlit run frontend.py
+python -m streamlit run frontend.py --server.fileWatcherType none
 ```
 
 ## 4. 当前图谱 schema
