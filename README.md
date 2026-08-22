@@ -208,29 +208,8 @@ streamlit run frontend.py
 
 实际运行时可以根据已有数据跳过部分步骤。例如 Neo4j 中已经有论文节点时，可以只补分类、机构或向量。
 
-## 6. 运行前配置
 
-当前代码仍有一些脚本使用硬编码配置。为了更安全和可复现，建议逐步迁移到 `.env`。
-
-建议 `.env`：
-
-```env
-LLM_API_KEY=your_api_key
-LLM_BASE_URL=https://your-openai-compatible-endpoint/v1
-LLM_MODEL_NAME=qwen-max
-
-OPENAI_API_KEY=your_openai_key
-OPENAI_MODEL=gpt-5-mini
-
-NEO4J_URI=neo4j://localhost:7687
-NEO4J_USER=neo4j
-NEO4J_PASSWORD=your_password
-
-CROSSREF_MAILTO=your_email@example.com
-```
-
-
-## 7. Neo4j 向量索引
+## 6. Neo4j 向量索引
 
 `core/vector_search.py` 默认调用名为 `paper_embeddings` 的 Neo4j 向量索引。
 
