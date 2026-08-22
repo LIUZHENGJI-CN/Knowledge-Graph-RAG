@@ -174,7 +174,7 @@ python -m streamlit run frontend.py --server.fileWatcherType none
 
 ## 5. 推荐运行顺序
 
-首次复现时建议按下面顺序执行：
+建议按下面顺序执行：
 
 ```bash
 # 1. 扩充机构域名映射
@@ -213,7 +213,7 @@ streamlit run frontend.py
 
 `core/vector_search.py` 默认调用名为 `paper_embeddings` 的 Neo4j 向量索引。
 
-如果数据库中还没有索引，需要在 Neo4j Browser 中执行类似语句：
+为数据库中添加索引，需要在 Neo4j Browser 中执行类似语句：
 
 ```cypher
 CREATE VECTOR INDEX paper_embeddings IF NOT EXISTS
