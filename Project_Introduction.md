@@ -1,4 +1,4 @@
-本项目旨在复现并构建一个面向学术论文的知识图谱增强问答系统。项目数据主要来源于 arXiv 开放论文平台，重点关注 `q-bio` 定量生物学相关论文，包括 Biomolecules、Genomics、Molecular Networks、Cell Behavior、Quantitative Methods 等多个子方向。这类论文兼具生物学问题和计算建模、网络分析、机器学习等方法特征，适合用于构建学术知识图谱与语义问答系统。
+本项目旨在复现并构建一个面向学术论文的知识图谱增强问答系统。项目数据主要来源于 arXiv 开放论文平台，重点关注 `q-bio` 定量生物学相关论文，包括 Biomolecules、Genomics、Molecular Networks、Cell Behavior、Quantitative Methods 等多个子方向，共约2000篇。这类论文兼具生物学问题和计算建模、网络分析、机器学习等方法特征，适合用于构建学术知识图谱与语义问答系统。
 
 项目首先从 arXiv 获取论文的基础元数据，包括标题、arXiv ID、发表时间、DOI、PDF 链接、作者和学科分类等信息。随后利用大语言模型从论文标题和摘要中抽取研究背景、核心方法和关键词，将原始论文数据转化为更结构化的知识单元。
 
