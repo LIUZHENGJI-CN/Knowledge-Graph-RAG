@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local config and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.p12
+
+# Large generated data
+data/full_paper_knowledge_base.json
+data/institution_map.json
+*.sqlite
+*.db
+
+# Documents and local notes
+*.docx
+*.pptx
+*.xlsx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml

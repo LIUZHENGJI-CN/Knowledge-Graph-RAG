@@ -1,0 +1,12 @@
+{
+  "q-bio.BM": "Biomolecules",
+  "q-bio.GN": "Genomics",
+  "q-bio.MN": "Molecular Networks",
+  "q-bio.CB": "Cell Behavior",
+  "q-bio.PE": "Populations and Evolution",
+  "q-bio.NC": "Neurons and Cognition",
+  "q-bio.TO": "Tissues and Organs",
+  "q-bio.QM": "Quantitative Methods",
+  "q-bio.SC": "Subcellular Processes",
+  "q-bio.OT": "Other Quantitative Biology"
+}
