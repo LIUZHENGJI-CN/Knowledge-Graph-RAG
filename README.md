@@ -20,7 +20,7 @@
 - `category.json`：arXiv `q-bio` 分类代码到学科名称的映射。
 - `institution_map.json`：邮箱域名到机构名称的映射。
 - `full_paper_knowledge_base.json`：本地保存的论文知识库 JSON，包含论文元数据、作者、分类、机构、venue、语义抽取结果等。
-
+  
 ### 2.2 图谱初始化与论文采集
 
 - `getinstitutionmap.py`
@@ -229,10 +229,6 @@ NEO4J_PASSWORD=your_password
 CROSSREF_MAILTO=your_email@example.com
 ```
 
-注意：
-
-- 不要把真实 API key、Neo4j 密码或云数据库凭据提交到 GitHub。
-- 当前 `core/requirements.txt` 还不完整，运行完整项目通常还需要安装 `neo4j`、`py2neo`、`streamlit`、`sentence-transformers`、`torch`、`arxiv`、`pymupdf`、`pdfplumber`、`tqdm`。
 
 ## 7. Neo4j 向量索引
 
@@ -254,62 +250,3 @@ OPTIONS {
 
 `BAAI/bge-m3` 的向量维度通常是 1024。
 
-## 8. 当前版本和旧 README 的差异
-
-当前本地代码中没有以下旧 README 提到的模块：
-
-- `enhance_kg.py`
-- `analyze_ambiguity.py`
-- `neo_to_json.py`
-- `deep_research.py`
-- `academic_frontend.py`
-- `kg_agent_backend.py`
-- `fix_knowledge.py`
-
-当前前端文件是 `core/frontend.py`，核心入口是 `core/router.py`。
-
-## 9. 如何加入 GitHub
-
-### 方式 A：手动命令加入已有 GitHub 仓库
-
-如果 GitHub 上已经建好了空仓库：
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/<your-name>/<repo-name>.git
-git push -u origin main
-```
-
-### 方式 B：用 GitHub CLI 自动创建并推送
-
-如果本机安装了 GitHub CLI，并且已经登录：
-
-```bash
-gh auth login
-git init
-git add .
-git commit -m "Initial commit"
-gh repo create <repo-name> --private --source=. --remote=origin --push
-```
-
-如果想公开仓库，把 `--private` 改成 `--public`。
-
-### 方式 C：让我自动帮你做
-
-我可以继续帮你自动执行：
-
-1. 检查是否安装 `git` 和 `gh`。
-2. 初始化本地 Git 仓库。
-3. 生成 `.gitignore`，排除 `.venv`、缓存、密钥文件、大型中间文件等。
-4. 检查是否存在 API key、密码等敏感内容。
-5. 创建第一次 commit。
-6. 如果你已登录 `gh`，我可以用 `gh repo create` 自动创建 GitHub 仓库并 push。
-
-在自动执行前，需要你确认：
-
-- GitHub 仓库名。
-- 公开还是私有。
-- 是否要把 `full_paper_knowledge_base.json`、`institution_map.json` 这类数据文件也提交。
